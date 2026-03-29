@@ -1,10 +1,10 @@
-// ================= PIN SETUP =================
+//PIN SETUP
 int utara[]  = {4, 3, 2};   // merah, kuning, hijau
 int timur[]  = {7, 6, 5};
 int selatan[] = {10, 9, 8};
 int barat[]  = {13, 12, 11};
 
-// ================= SETUP =================
+//SETUP
 void setup() {
   for (int i = 2; i <= 13; i++) {
     pinMode(i, OUTPUT);
@@ -12,7 +12,7 @@ void setup() {
   setAllRed();
 }
 
-// ================= LOOP =================
+//LOOP
 void loop() {
   aktifkanSimpang(utara);
   aktifkanSimpang(timur);
@@ -20,7 +20,7 @@ void loop() {
   aktifkanSimpang(barat);
 }
 
-// ================= FUNGSI =================
+//FUNGSI
 
 // Semua merah nyala
 void setAllRed() {
